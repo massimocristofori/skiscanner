@@ -1,0 +1,25 @@
+<div class="list list-inset">
+    <span>{{errorMsg}}</span>
+  <label class="item item-input">
+    <input type="text" name="name" ng-model="profile.name" placeholder="Nome">
+  </label>
+  <label class="item item-input">
+    <input type="text" name="gender" ng-model="profile.gender" placeholder="Sesso">
+  </label>
+    <label class="item item-input">
+    <input type="text" name="type" ng-model="profile.type" placeholder="Sci o Tavola?">
+  </label>
+    <label class="item item-input">
+    <input type="text" name="jacket" ng-model="profile.jacket" placeholder="Colore della giacca">
+  </label>
+    <label class="item item-input">
+    <input type="text" name="pants" ng-model="profile.pants" placeholder="Colore dei pantaloni">
+  </label>
+</div>
+
+<button class="button button-full button-positive" ng-click="saveProfile()">
+  Salva il tuo profilo e fatti riconoscere ;)
+</button>
+
+
+

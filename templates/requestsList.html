@@ -1,0 +1,25 @@
+<div class="list">
+    <div ng-repeat="request in requests">
+
+        <div class="item item-divider item-icon-left">
+            <i class="icon ion-ios7-pricetag-outline"></i>
+            {{request.skiArea}} ({{request.type}} {{request.skipass}})
+            
+            <span class="badge badge-assertive">{{request.activeDeals}}</span>
+            
+        </div>
+
+        <div class="list">
+            <div ng-repeat="deal in request.deals">
+                <div class="item item-avatar">
+
+                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAryY2vN3Pns3tksS_T0tgA4w1SFxQ0innLD4ZCoGYlMQzTC83">
+                    <h2>{{deal.user}}</h2>
+                    <p>{{deal.time}} zona {{deal.where}}, {{deal.skipass}} skipass</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

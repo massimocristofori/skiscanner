@@ -1,0 +1,17 @@
+<div class="list ">
+
+    <div ng-repeat="skiArea in skiAreas" class="item-image">
+        <img src="{{skiArea.img}}" >
+        <div class="skiAreaTextLeft">
+
+            <a style="text-decoration: none;" href="#/request/{{skiArea.skiArea}}">
+
+                <h2 style="margin-left: 5px">{{skiArea.skiArea}}</h2>
+                <h4 style="margin-left: 5px">{{skiArea.city}} - ({{skiArea.country}})</h4>
+
+            </a>
+        </div>
+    </div>
+
+</div>
+

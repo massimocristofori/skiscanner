@@ -1,0 +1,29 @@
+   <span>{{errorMsg}}</span>
+<form>
+<div class="list list-inset">
+  <label class="item item-input">
+    <input type="text" name="skiArea" ng-model="request.skiArea" placeholder="Ski Area">
+  </label>
+  <label class="item item-input">
+    <input type="text" name="day" ng-model="request.day" placeholder="Giorno">
+  </label>
+    <label class="item item-input">
+    <input type="text" name="time" ng-model="request.time" placeholder="Ora">
+  </label>
+    <label class="item item-input">
+    <input type="text" name="skipass" ng-model="request.skipass" placeholder="Numero Skipass">
+  </label>
+    <label class="item item-input">
+    <input type="text" name="where" ng-model="request.where" placeholder="Dove?">
+  </label>
+</div>
+
+<button class="button button-half button-positive" ng-click="saveBuyRequest()">
+  Cerco Skipass
+</button>
+<button class="button button-half button-energized" ng-click="saveSellRequest()">
+  Vendo Skipass
+</button>
+
+
+</form>
